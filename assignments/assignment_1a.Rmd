@@ -1,0 +1,20 @@
+---
+title: "Assignment 1a"
+author: "Annika Leiby"
+date: "2/9/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Why I am taking this course.
+
+One of the reasons I am taking this course is because it is a requirement for the data science focus. Another reason is because although I have learned many computing skills in data analysis, and GIS, I am excited to have a class solely  devoted to computing and computing skills.
+
+
+# My data science background.
+
+My data science background has primarily consisted of my coursework at Bren, my GP, and my summer internships last year. Prior to Bren I would say my data science background was very small. Since I am completing the data science focus I have taken a number of courses including GIS, Advanced GIS, and currently am taking Advanced Data Analysis. My GP "Flood Forward" has completed almost all of our analysis in ArcMap Model builder. Even though I have this data experience I still feel like there is always more to learn. 
+
