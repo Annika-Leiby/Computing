@@ -1,0 +1,12 @@
+---
+title: "Group Submission Assignment 1b"
+author: "Annika Leiby, Elmera Azadpour, Ruben Sanchez Ramirez"
+date: "2/15/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
