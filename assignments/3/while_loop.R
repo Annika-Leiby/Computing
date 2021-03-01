@@ -16,6 +16,7 @@ while ((depth_groundwater < 80) &&(yr < 50))  {
   depth_groundwater = depth_groundwater + 0.1* depth_groundwater
   # keep track of time
   yr = yr + 1
+  yr = ifelse( (yr < 0), NA, yr)  #add error checking
 }
 
 

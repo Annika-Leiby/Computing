@@ -6,7 +6,7 @@ output: html_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
 
 # attach packages
 
@@ -15,6 +15,8 @@ library(dplyr)
 ```
 
 ### While Loop: 
+
+Consider a situation where you want to repeat a function until a condition is met. 
 
 If depth to groundwater in a well increases by 10 meters per year, how many years will it take for the water level in the well to be greater than 80 meters, if the current depth to groundwater is 10 meters?
 
@@ -44,14 +46,16 @@ You have four wells with  different depths to groundwater. Well one has a depth 
 
 ```{r}
 
-# Set up the well depths
+# Set up the well depth inputs
 x =c(35,40,26,79)
 
 
-# Set up the case when function
+# Set up the case when function with the groundwater category that is returned based on a given well depth input
+
 case_when(x < 40 ~ "sustainable", x == 40 ~ "overdrafted", x > 40 ~ "critically overdrafted")
 
+# Run to get groundwater categories for the four wells 
 
 ```
 
-Well one is classified as having sustainable groundwater levels. Well two is classified as having overdrafted groundwater levels. Well three is classified has having sustainable groundwater levels and well four is classified as having critically overdrafted groundwater levels. 
+Well one is classified as having sustainable groundwater levels. Well two is classified as having overdrafted groundwater levels. Well three is classified as having sustainable groundwater levels and well four is classified as having critically overdrafted groundwater levels. 

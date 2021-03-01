@@ -170,6 +170,7 @@ summary {
 
 <div id="while-loop" class="section level3">
 <h3>While Loop:</h3>
+<p>Consider a situation where you want to repeat a function until a condition is met.</p>
 <p>If depth to groundwater in a well increases by 10 meters per year, how many years will it take for the water level in the well to be greater than 80 meters, if the current depth to groundwater is 10 meters?</p>
 <pre class="r"><code>source(&quot;while_loop.R&quot;)
 
@@ -188,15 +189,17 @@ yr</code></pre>
 <h3>Case When:</h3>
 <p>If groundwater (x) is &lt; 40m the groundwater is considered sustainable. If groundwater (x) is == 40m the groundwater is considered overdrafted. If groundwater (x) is &gt; 40m, the groundwater is considered critically overdrafted.</p>
 <p>You have four wells with different depths to groundwater. Well one has a depth to groundwater of 35m, well two has a depth to groundwater of 40m, well three has a depth to groundwater of 26m, and well four has a depth to groundwater of 79m. What is the groundwater classification of each well?</p>
-<pre class="r"><code># Set up the well depths
+<pre class="r"><code># Set up the well depth inputs
 x =c(35,40,26,79)
 
 
-# Set up the case when function
+# Set up the case when function with the groundwater category that is returned based on a given well depth input
+
 case_when(x &lt; 40 ~ &quot;sustainable&quot;, x == 40 ~ &quot;overdrafted&quot;, x &gt; 40 ~ &quot;critically overdrafted&quot;)</code></pre>
 <pre><code>## [1] &quot;sustainable&quot;            &quot;overdrafted&quot;            &quot;sustainable&quot;           
 ## [4] &quot;critically overdrafted&quot;</code></pre>
-<p>Well one is classified as having sustainable groundwater levels. Well two is classified as having overdrafted groundwater levels. Well three is classified has having sustainable groundwater levels and well four is classified as having critically overdrafted groundwater levels.</p>
+<pre class="r"><code># Run to get groundwater categories for the four wells </code></pre>
+<p>Well one is classified as having sustainable groundwater levels. Well two is classified as having overdrafted groundwater levels. Well three is classified as having sustainable groundwater levels and well four is classified as having critically overdrafted groundwater levels.</p>
 </div>
 
 
