@@ -22,20 +22,26 @@ If depth to groundwater in a well increases by 10 meters per year, how many year
 
 ```{r}
 
-source("while_loop.R")
+# Source the function and code from the while loop R script
+
+source("R/while_loop.R")
 
 
-# What is the depth to groundwater 
+# Return the depth to groundwater value when it surpasses 80m for the first time
 
 depth_groundwater 
 
-# What is the year that depth to groundwater is reached
+# The depth to groundwater is 81.403m. 
+
+# Return the year that depth to groundwater surpasses 80m
 
 yr
 
+# The year that depth to groundwater surpasses 80m is after 23 years.
+
 ```
 
- It will take 23 years for the depth to groundwater to be greater than 80 meters if the depth increases by 10% each year with an inital depth to groundwater of 10 meters. 
+It will take 23 years for the depth to groundwater to be greater than 80 meters if the depth increases by 10% each year with an inital depth to groundwater of 10 meters. 
  
  
 ### Case When:
@@ -46,15 +52,15 @@ You have four wells with  different depths to groundwater. Well one has a depth 
 
 ```{r}
 
-# Set up the well depth inputs
-x =c(35,40,26,79)
+# Set up the well depth inputs 
 
+x =c(35,40,26,79)
 
 # Set up the case when function with the groundwater category that is returned based on a given well depth input
 
 case_when(x < 40 ~ "sustainable", x == 40 ~ "overdrafted", x > 40 ~ "critically overdrafted")
 
-# Run to get groundwater categories for the four wells 
+# Run to return the groundwater categories for the four wells 
 
 ```
 
